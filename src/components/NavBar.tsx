@@ -25,7 +25,7 @@ function SignInButton() {
   return <form action={async () => {
     "use server";
 
-    await signIn
+    await signIn();
   }}>
     <Button type="submit">
       Sign In
